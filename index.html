@@ -3,78 +3,55 @@
 
 <head>
   <meta charset="utf-8">
+
   <title>AdDevSEO | SEO, Web Development & Digital Marketing Solutions</title>
   <meta name="description" content="AdDevSEO offers comprehensive SEO, web development, and digital marketing services empowering businesses to achieve sustainable online growth.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="max-image-preview:large, index, follow" />
   <link rel="canonical" href="https://addevseo.github.io/"/>
   <link rel="shortcut icon" href="assets/images/addevseo.png" type="image/png">
+  <!-- <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script> -->
+  <link rel="stylesheet" href="assets/css/magnific-popup.css">
 
-  <!-- Preload & Async Google Fonts -->
-  <link rel="preload" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800&display=swap"></noscript>
+  <link rel="stylesheet" href="assets/css/slick.css">
 
-  <!-- Preload Bootstrap -->
-  <link rel="preload" href="assets/css/bootstrap.min.css" as="style">
-  <link rel="stylesheet" href="assets/css/bootstrap.min.css" media="print" onload="this.media='all'">
-  <noscript><link rel="stylesheet" href="assets/css/bootstrap.min.css"></noscript>
+  <link rel="stylesheet" href="assets/css/LineIcons.css">
 
-  <!-- Inline Critical CSS -->
-  <style>
-    /* Add critical CSS here (above-the-fold styles) */
-  </style>
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
 
-  <!-- Async Load Non-Essential CSS -->
-  <link rel="stylesheet" href="assets/css/magnific-popup.css" media="print" onload="this.media='all'">
-  <link rel="stylesheet" href="assets/css/slick.css" media="print" onload="this.media='all'">
-  <link rel="stylesheet" href="assets/css/LineIcons.css" media="print" onload="this.media='all'">
-  <link rel="stylesheet" href="assets/css/default.css" media="print" onload="this.media='all'">
-  <link rel="stylesheet" href="assets/css/style.css" media="print" onload="this.media='all'">
-  <noscript>
-    <link rel="stylesheet" href="assets/css/magnific-popup.css">
-    <link rel="stylesheet" href="assets/css/slick.css">
-    <link rel="stylesheet" href="assets/css/LineIcons.css">
-    <link rel="stylesheet" href="assets/css/default.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-  </noscript>
+  <link rel="stylesheet" href="assets/css/default.css">
 
-  <!-- Defer FontAwesome -->
-  <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" as="style">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" media="print" onload="this.media='all'">
-  <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"></noscript>
-
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <meta name="google-site-verification" content="yw9bSbIzx4pHXnvRnYk2UJr0gYCEV6DYR8W9C4unojA" />
-
   <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-EQDQJX9XHT"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-EQDQJX9XHT');
-  </script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EQDQJX9XHT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-  <!-- JavaScript Redirects (Deferred) -->
-  <script defer>
-    document.addEventListener("DOMContentLoaded", function() {
-      // Redirect from "www" subdomain to non-www
-      if (location.hostname.startsWith("www.")) {
-        var newURL = "https://" + location.hostname.slice(4) + location.pathname + location.search;
-        window.location.replace(newURL);
-      }
-      // Redirect URLs ending with ".html" to without ".html"
-      if (location.pathname.endsWith('.html')) {
-        var newURL = location.pathname.slice(0, -5);
-        window.location.replace(newURL);
-      }
-      // Redirect URLs ending with "index.html" to without "index.html"
-      if (location.pathname.endsWith('index.html')) {
-        var newURL = location.pathname.slice(0, -10);
-        window.location.replace(newURL);
-      }
-    });
-  </script>
-</head>
+  gtag('config', 'G-EQDQJX9XHT');
+</script>
+<script>
+  // Redirect from "www" subdomain to non-www
+  if (location.hostname.startsWith("www.")) {
+    var newURL = "https://" + location.hostname.slice(4) + location.pathname + location.search;
+    window.location.replace(newURL);
+  }
+
+  // Redirect URLs ending with ".html" to without ".html"
+  if (location.pathname.endsWith('.html')) {
+    var newURL = location.pathname.slice(0, -5); // Remove the '.html' extension
+    window.location.replace(newURL);
+  }
+
+  // Redirect URLs ending with "index.html" to without "index.html"
+  if (location.pathname.endsWith('index.html')) {
+    var newURL = location.pathname.slice(0, -10); // Remove the 'index.html' part
+    window.location.replace(newURL);
+  }
+</script>
 <body>
 
   <div class="preloader">
